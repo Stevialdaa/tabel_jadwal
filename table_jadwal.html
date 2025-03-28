@@ -3,19 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--link css pake link-->
+    <title>Jadwal Kuliah Stevialda</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        td:empty {
+            background-color: rgb(201, 69, 69);
+        }
+    </style>
 </head>
 <body>
     <table border="1">
         <tr>
+            <th rowspan="1"></th>
             <th>Senin</th>
+            <th>Selasa</th>
+            <th>Rabu</th>
+            <th>Kamis</th>
+            <th>jumat</th>
         </tr>
         <tr>
-            <td colspan="3"></td> <!--kalau row pake rowspan-->
+            <th>Sesi 1</th>
+            <td colspan="2"></td>
+            <td>Pemograman Web Dasar</td>
+            <td colspan="1"></td>
+            <td>Statistika Bisnis</td>
         </tr>
         <tr>
-            <td>1</td>
+            <th>Sesi 2</th><!--kalau row pake rowspan-->
+            <td colspan="2"></td>
+            <td>Microeconomics</td>
+            <td>Prinsip-prinsip Akutansi</td>
+            <td colspan="1"></td>
+        </tr>
+        <tr>
+            <th>Sesi 3</th>
+            <td>Sistem Basis Data</td>
+            <td>Brand and Social Media</td>
+            <td>Hukum bisnis</td>
+            <td colspan="2"></td>
         </tr>
     </table>
 </body>
